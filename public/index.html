@@ -39,13 +39,44 @@
     </style> -->
   </head>
   <body>
-    <div id="wrapper">
-      <h1>FAKE NEWS SCRAPER</h1>
-      <h2><i>Big League.</i></h2>
-      <div id="articles"></div>
-      <div id="notes"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="/">Mongo Scraper</a>
+      <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="navbar-collapse collapse" id="navbarColor01" aria-expanded="false" style="height: 0px;">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/saved">Saved Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-danger scrape-new">SCRAPE NEW ARTICLES!</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-danger clear">CLEAR ARTICLES!</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron text-center">
+        <div class="overlay">
+        </div>
+        <div class="background-image">
+        </div>
+        <div class="caption">
+          <h1>Mongo FAKE NEWS Scraper</h1>
+        </div>
     </div>
+    <div id="articles"></div>
+    <div id="notes"></div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

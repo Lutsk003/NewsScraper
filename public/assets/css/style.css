@@ -4783,7 +4783,7 @@
  .card-img {
    width: 100%;
    border-radius: calc(0.25rem - 1px);
- }
+  }
  
  .card-img-top {
    width: 100%;
@@ -5204,17 +5204,29 @@
  }
  
  .jumbotron {
-   padding: 2rem 1rem;
-   margin-bottom: 2rem;
+   height: 500px;
+   width: 100%;
+   padding: 0;
    background-color: #e9ecef;
-   border-radius: 0.3rem;
+   position: relative;
  }
+
+ .jumbotron .background-image {
+    height: 100%;
+    background-image: url(../images/fakenews.jpg);
+    background-size: cover;
+ }
+
+
+
  
  @media (min-width: 576px) {
    .jumbotron {
-     padding: 4rem 2rem;
-   }
- }
+     padding: 0;
+  }
+ 
+
+ 
  
  .jumbotron-fluid {
    padding-right: 0;
@@ -9495,4 +9507,5 @@
      color: inherit;
      border-color: #dee2e6;
    }
+
  }
